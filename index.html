@@ -83,22 +83,7 @@ var commonConfig = {"brand":"wix"};        var shiftedFromHtmlToNewEditor = true
 
 <body>
 
-    <div id="video-preloader" class="video-preloader">
-    <video id="editor-video-preloader" width=320 height=320 poster="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" loop autoplay muted=true></video>
-    <script>
-        // editor assets serving domain
-        var videoElement = document.getElementById('editor-video-preloader');
-        var devicePixelRatio = window.devicePixelRatio || window.screen.deviceXDPI / window.screen.logicalXDPI;
-        var retinaSuffix = devicePixelRatio >= 2 ? "-@2x" : "";
-
-        var videoVersion = ".v2";
-        videoElement.width = 200;
-        videoElement.height = 200;
-        videoElement.src = "https://static.parastorage.com/services/santa-resources/resources/editor/preloader/videoPreloader-5" + retinaSuffix + videoVersion + ".mp4";
-        videoElement.load();
-    </script>
-</div>
-<div id="root"></div>
+    <div id="root"></div>
 <script type="text/javascript">
     var santaBase = 'https://static.parastorage.com/services/santa/1.11783.0';
     var editorBase = 'https://static.parastorage.com/services/santa-editor/1.13854.0';
